@@ -39,3 +39,5 @@ while game:
         else:
             score -= 1
         currentQuestion += 1
+# good Youtubers to watch :
+# liveoverflow, theprimagen, codeAeshtitics, fireshipio
