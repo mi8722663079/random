@@ -22,17 +22,7 @@ while game:
         game = False
     elif score >= 0:
         print(questions[currentQuestion] + '\n')
-        answers = [
-                "nile",
-                "everst",
-                "a",
-                "b",
-                "c",
-                "d",
-                "e",
-                "f",
-                "g",
-                "h"]
+        answers = ["a", "b", "c", "d", "e", "f", "g", "h" "i", "j"]
         inputfromUser = input("The answer is :")
         if inputfromUser == answers[currentQuestion]:
             score += 1
