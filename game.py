@@ -9,6 +9,7 @@ questions = ["what is the name of the longest river in the world ?",
              "who founded the principles of the law of gravity ?",
              "what is the total measures of angles serrounding one point ?",
              "what is the number of medians in any triangle ?"]
+answers = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
 game = True
 score = 0
 currentQuestion = 0
@@ -17,12 +18,11 @@ while game:
     if score < 0:
         print("\n" + "YOU LOSE")
         game = False
-    if currentQuestion >= 10:
-        print("Game Finished")
-        game = False
     elif score >= 0:
+        if currentQuestion >= 9:
+            print("Game Finished")
+            game = False
         print(questions[currentQuestion] + '\n')
-        answers = ["a", "b", "c", "d", "e", "f", "g", "h" "i", "j"]
         inputfromUser = input("The answer is :")
         if inputfromUser == answers[currentQuestion]:
             score += 1
