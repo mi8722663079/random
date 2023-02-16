@@ -22,7 +22,21 @@ while game:
         game = False
     elif score >= 0:
         print(questions[currentQuestion] + '\n')
+<<<<<<< HEAD
         answers = ["a", "b", "c", "d", "e", "f", "g", "h" "i", "j"]
+=======
+        answers = [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h"
+                "i",
+                "j"]
+>>>>>>> 0c18bdbc6cf24b29457b614f5e1c63a9a2a28c02
         inputfromUser = input("The answer is :")
         if inputfromUser == answers[currentQuestion]:
             score += 1
